@@ -1,0 +1,63 @@
+$purple:#61004d;
+
+* {
+  font-family: 'Raleway', sans-serif;
+}
+
+.container {
+  max-width: 980px;
+  margin: 0 auto;
+  background: url('/assets/bian-dang-truck-bg.png') no-repeat;
+}
+#logo{
+  margin-top: 0;
+}
+a{
+  color: #a0e2f9;
+  background: #61004d;
+}
+h1 a{
+  background: url('/assets/bian-dang-logo.png') no-repeat;
+  display: block;
+  height: 235px;
+  width: 235px;
+  text-indent: 100%;
+  float: left;
+  white-space: nowrap;
+  overflow: hidden;
+  margin: auto;
+}
+
+.menu ul li{
+  float:left;
+  list-style-type: none;
+  padding: 8px;
+  height: 20px;
+  width: auto;
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  a{
+    font-size: 20px;
+    background: none;
+    color: $purple;
+  }
+}
+
+#body_content_title{
+  display:none;
+}
+
+
+footer{
+  background: #61004d;
+  color:#fff;
+  font-size: 9px;
+  padding: 15px;
+  margin: 10px 20px 10px 0px;
+  text-align: right;
+}
+
+.cf{
+  clear:both;
+}
