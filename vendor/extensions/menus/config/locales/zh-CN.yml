@@ -1,0 +1,32 @@
+zh-CN:
+  refinery:
+    plugins:
+      menus:
+        title: Menus
+    menus:
+      admin:
+        menus:
+          actions:
+            create_new: 建立新的 Menu
+            reorder: 对 Menus 重新排序
+            reorder_done: 对 Menus 的重新排序结束
+          records:
+            title: Menus
+            sorry_no_results: 对不起，未找到结果。 #Sorry! There are no results found.
+
+            # There are no Menus yet. Click "Add New Menu" to add your first menu.
+            no_items_yet: 目前没有 Menus . 点击 "Add New Menu" 创建一个menu.
+          menu:
+            view_live_html: 查看 menu 的最新内容.<br/><em>(新窗口中打开)</em>
+            edit: 编辑 menu
+            delete: 永久删除 menu
+      menus:
+        show:
+          other: 其他 Menus
+  activerecord:
+    attributes:
+      'refinery/menus/menu':
+        name: Name
+        price: Price
+        description: Description
+        photo: Photo
