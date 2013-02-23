@@ -1,13 +1,42 @@
-<% content_for :body do %>
-  <ul id="menus">
-    <% @menus.each do |menu| %>
-      <li>
-        <%= link_to menu.name, refinery.menus_menu_path(menu) %>
-        <% binding.pry %>
-      </li>
+<style type="text/css">
+#menus{
 
-    <% end %>
-  </ul>
+}
+.menu-name{
+  font-size: 20px;
+  float: left;
+}
+.menu-price{
+  font-size: 20px;
+  float: right;
+}
+.menu-desc{
+  padding: 0 20px;
+  margin-bottom: 20px;
+  clear: both;
+}
+
+</style>
+
+
+<% content_for :body do %>
+
+
+<div id="menus">
+  <% @menus.each do |menu| %>
+    <div class='menu-name'>
+      <%= menu.name %></div>
+    <div class='menu-price'>
+      <%= number_to_currency(menu.price) %></div>
+
+    <div class='menu-desc'>
+      <%= menu.description %></div>
+    <div class='menu-pic'>
+      <%#= image_fu menu.photo, nil %></div>
+  <% end %>
+</div>
+
+
 <% end %>
 
 <%= render '/refinery/content_page' %>
