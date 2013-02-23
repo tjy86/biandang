@@ -1,0 +1,29 @@
+nb:
+  refinery:
+    plugins:
+      days:
+        title: Days
+    days:
+      admin:
+        days:
+          actions:
+            create_new: Lag en ny Day
+            reorder: Endre rekkefølgen på Days
+            reorder_done: Ferdig å endre rekkefølgen Days
+          records:
+            title: Days
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Days enda. Klikk på "Lag en ny Day" for å legge til din første day.
+          day:
+            view_live_html: Vis hvordan denne day ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+            edit: Rediger denne day
+            delete: Fjern denne day permanent
+      days:
+        show:
+          other: Andre Days
+  activerecord:
+    attributes:
+      'refinery/days/day':
+        day: Day
+        neighborhood: Neighborhood
+        location: Location

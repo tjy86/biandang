@@ -25,6 +25,7 @@ end
 
 gem 'jquery-rails', '~> 2.0.0'
 gem 'pry-rails'
+gem 'geocoder'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
@@ -52,3 +53,4 @@ gem 'refinerycms-i18n', '~> 2.0.0'
 #  gem 'refinerycms-page-images', '~> 2.0.0'
 
 gem 'refinerycms-menus', :path => 'vendor/extensions'
+gem 'refinerycms-days', :path => 'vendor/extensions'

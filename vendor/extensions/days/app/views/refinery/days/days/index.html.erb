@@ -1,0 +1,73 @@
+<style type="text/css">
+#days{
+}
+.day{
+  font-size: 20px;
+  float:left;
+  width: 20%;
+}
+.hood{
+  font-size: 20px;
+  float:left;
+  width: 30%;
+}
+.location{
+  font-size: 20px;
+  float:left;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+#map_canvas {
+  height: 500px;
+  width: 500px;
+}
+</style>
+
+<% content_for :body do %>
+
+  <div id="days">
+    <% @days.each do |day| %>
+
+        <%#= link_to day.day, refinery.days_day_path(day) %>
+        <div class='day'><%= day.day %></div>
+        <div class='hood'>/ <%= day.neighborhood %></div>
+        <div class='clearfix'></div>
+        <div class='location'><%= day.location %></div>
+        <div class='clearfix'></div>
+    <% end %>
+  </div>
+
+<div id="map_canvas"></div>
+
+
+<% end %>
+
+<%= render '/refinery/content_page' %>
+
+
+<script type="text/javascript">
+function initialize() {
+  var mapOptions = {
+    zoom: 12,
+    center: new google.maps.LatLng(40.779502, -73.967857),
+    mapTypeId: google.maps.MapTypeId.ROADMAP
+  }
+  map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
+  add_marker(40.7666958, -73.9747837, "central park");
+}
+
+function loadScript() {
+  var script = document.createElement("script");
+  script.type = "text/javascript";
+  script.src = "http://maps.googleapis.com/maps/api/js?key=AIzaSyBYPC8Wothfroho8ub3yM6wHtOE--Oovng&sensor=false&callback=initialize";
+  document.body.appendChild(script);
+}
+
+function add_marker(lat, long, title)
+{
+  var latlng = new google.maps.LatLng(lat, long);
+  var marker = new google.maps.Marker({position: latlng, map: map, title:title});
+}
+
+window.onload = loadScript;
+</script>

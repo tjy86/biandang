@@ -1,0 +1,29 @@
+sk:
+  refinery:
+    plugins:
+      days:
+        title: Days
+    days:
+      admin:
+        days:
+          actions:
+            create_new: Pridať Day
+            reorder: Preusporiadať Days
+            reorder_done: Koniec radenia Days
+          records:
+            title: Days
+            sorry_no_results: Ľutujeme, ale neboli nájdené žiadne výsledky.
+            no_items_yet: Nie sú vytvorené žiadne Days. Kliknite na "Pridať Day" pre pridanie prvého day.
+          day:
+            view_live_html: Zobraziť náhľad day<br/><em>(otvorí sa v novom okne)</em>
+            edit: Upraviť day
+            delete: Zmazať day
+      days:
+        show:
+          other: Daľšie Days
+  activerecord:
+    attributes:
+      'refinery/days/day':
+        day: Day
+        neighborhood: Neighborhood
+        location: Location

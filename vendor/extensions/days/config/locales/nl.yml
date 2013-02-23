@@ -1,0 +1,29 @@
+nl:
+  refinery:
+    plugins:
+      days:
+        title: Days
+    days:
+      admin:
+        days:
+          actions:
+            create_new: Maak een nieuwe Day
+            reorder: Wijzig de volgorde van de Days
+            reorder_done: Klaar met het wijzingen van de volgorde van de Days
+          records:
+            title: Days
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Days. Druk op 'Maak een nieuwe Day' om de eerste aan te maken.
+          day:
+            view_live_html: Bekijk deze day op de website <br/><em>(opent een nieuw venster)</em>
+            edit: Bewerk deze day
+            delete: Verwijder deze day voor eeuwig
+      days:
+        show:
+          other: Andere Days
+  activerecord:
+    attributes:
+      'refinery/days/day':
+        day: Day
+        neighborhood: Neighborhood
+        location: Location

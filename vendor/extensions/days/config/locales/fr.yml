@@ -1,0 +1,29 @@
+fr:
+  refinery:
+    plugins:
+      days:
+        title: Days
+    days:
+      admin:
+        days:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Day
+            reorder: Réordonner les Days
+            reorder_done: Fin de réordonnancement des Days
+          records:
+            title: Days
+            sorry_no_results: "Désolé ! Aucun résultat."
+            no_items_yet: 'Il n''y a actuellement aucun(e) Day. Cliquer sur "Créer un(e) nouve(au/l/lle) Day" pour créer votre premi(er/ère) day.'
+          day:
+            view_live_html: Voir ce(t/tte) day <br/><em>(Ouvre une nouvelle fenêtre)</em>
+            edit: Modifier ce(t/tte) day
+            delete: Supprimer définitivement ce(t/tte) day
+      days:
+        show:
+          other: Autres Days
+  activerecord:
+    attributes:
+      'refinery/days/day':
+        day: Day
+        neighborhood: Neighborhood
+        location: Location

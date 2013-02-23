@@ -1,0 +1,30 @@
+es:
+  refinery:
+    plugins:
+      days:
+        title: Days
+#        article: masculino/femenino
+    days:
+      admin:
+        days:
+          actions:
+            create_new: Crear nuevo day
+            reorder: Reordenar days
+            reorder_done: Reordenación de days completada
+          records:
+            title: Days
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay days todavía. Pulsa en "Crear nuevo Day" para crear tu primer day.
+          day:
+            view_live_html: Ver este day como abierto al público <br/><em>(abre en ventana nueva)</em>
+            edit: Editar este day
+            delete: Borrar este day para siempre
+      days:
+        show:
+          other: Otros days
+  activerecord:
+    attributes:
+      'refinery/days/day':
+        day: Day
+        neighborhood: Neighborhood
+        location: Location

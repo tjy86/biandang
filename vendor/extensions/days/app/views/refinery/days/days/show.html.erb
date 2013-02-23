@@ -1,0 +1,39 @@
+<% content_for :body_content_title do %>
+  <%= @day.day %>
+<% end %>
+
+<% content_for :body do %>
+  <section>
+    <h1>Day</h1>
+    <p>
+      <%=raw @day.day %>
+    </p>
+  </section>
+  <section>
+    <h1>Neighborhood</h1>
+    <p>
+      <%=raw @day.neighborhood %>
+    </p>
+  </section>
+  <section>
+    <h1>Location</h1>
+    <p>
+      <%=raw @day.location %>
+    </p>
+  </section>
+<% end %>
+
+<% content_for :side_body do %>
+  <aside>
+    <h2><%= t('.other') %></h2>
+    <ul id="days">
+      <% @days.each do |day| %>
+        <li>
+          <%= link_to day.day, refinery.days_day_path(day) %>
+        </li>
+      <% end %>
+    </ul>
+  </aside>
+<% end %>
+
+<%= render '/refinery/content_page' %>

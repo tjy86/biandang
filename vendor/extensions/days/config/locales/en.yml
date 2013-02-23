@@ -1,0 +1,29 @@
+en:
+  refinery:
+    plugins:
+      days:
+        title: Days
+    days:
+      admin:
+        days:
+          actions:
+            create_new: Add New Day
+            reorder: Reorder Days
+            reorder_done: Done Reordering Days
+          records:
+            title: Days
+            sorry_no_results: Sorry! There are no results found.
+            no_items_yet: There are no Days yet. Click "Add New Day" to add your first day.
+          day:
+            view_live_html: View this day live <br/><em>(opens in a new window)</em>
+            edit: Edit this day
+            delete: Remove this day forever
+      days:
+        show:
+          other: Other Days
+  activerecord:
+    attributes:
+      'refinery/days/day':
+        day: Day
+        neighborhood: Neighborhood
+        location: Location

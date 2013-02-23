@@ -1,6 +1,8 @@
 PATH
   remote: vendor/extensions
   specs:
+    refinerycms-days (1.0)
+      refinerycms-core (~> 2.0.9)
     refinerycms-menus (1.0)
       refinerycms-core (~> 2.0.9)
 
@@ -69,6 +71,7 @@ GEM
       multi_json (~> 1.0)
     friendly_id (4.0.9)
     fssm (0.2.9)
+    geocoder (1.1.6)
     globalize3 (0.2.0)
       activemodel (>= 3.0.0)
       activerecord (>= 3.0.0)
@@ -211,10 +214,12 @@ PLATFORMS
 DEPENDENCIES
   coffee-rails (~> 3.2.1)
   compass-rails
+  geocoder
   jquery-rails (~> 2.0.0)
   pry-rails
   rails (= 3.2.11)
   refinerycms (~> 2.0.0)
+  refinerycms-days!
   refinerycms-i18n (~> 2.0.0)
   refinerycms-menus!
   sass-rails (~> 3.2.3)
