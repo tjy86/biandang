@@ -29,3 +29,5 @@ zh-CN:
         day: Day
         neighborhood: Neighborhood
         location: Location
+        longitue: Longitue
+        latitude: Latitude

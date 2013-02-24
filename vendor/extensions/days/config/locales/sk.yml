@@ -27,3 +27,5 @@ sk:
         day: Day
         neighborhood: Neighborhood
         location: Location
+        longitue: Longitue
+        latitude: Latitude

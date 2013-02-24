@@ -4,8 +4,7 @@ module Refinery
       class DaysController < ::Refinery::AdminController
 
         crudify :'refinery/days/day',
-                :title_attribute => 'day', :xhr_paging => true,
-                                            :sortable => false
+                :title_attribute => 'day', :xhr_paging => true
 
       end
     end

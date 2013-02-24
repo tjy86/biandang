@@ -6,8 +6,9 @@ class CreateDaysDays < ActiveRecord::Migration
       t.string :day
       t.string :neighborhood
       t.string :location
+      t.float :longitude
+      t.float :latitude
       t.integer :position
-
       t.timestamps
     end
 

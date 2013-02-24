@@ -3,7 +3,7 @@ module Refinery
     class Day < Refinery::Core::BaseModel
       self.table_name = 'refinery_days'
 
-      attr_accessible :day, :neighborhood, :location, :position
+      attr_accessible :day, :neighborhood, :location, :longitude, :latitude, :position
 
       acts_as_indexed :fields => [:day, :neighborhood, :location]
 

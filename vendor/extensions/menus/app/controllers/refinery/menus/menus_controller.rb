@@ -26,7 +26,8 @@ module Refinery
       end
 
       def find_page
-        @page = ::Refinery::Page.where(:link_url => "/menus").first
+
+        @page = ::Refinery::Page.where(:link_url => "/").first
       end
 
     end

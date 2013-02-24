@@ -1,27 +1,39 @@
-<%= form_for [refinery, :days_admin, @day] do |f| -%>
+  <%= form_for [refinery, :days_admin, @day] do |f| -%>
   <%= render '/refinery/admin/error_messages',
               :object => @day,
               :include_object_name => true %>
 
-  
+
   <div class='field'>
     <%= f.label :day -%>
     <%= f.text_field :day, :class => 'larger widest'  -%>
 
   </div>
-  
+
   <div class='field'>
     <%= f.label :neighborhood -%>
     <%= f.text_field :neighborhood  -%>
 
   </div>
-  
+
   <div class='field'>
     <%= f.label :location -%>
     <%= f.text_field :location  -%>
 
   </div>
-  
+
+  <div class='field'>
+    <%= f.label :longitude -%>
+    <%= f.text_field :longitude  -%>
+
+  </div>
+
+  <div class='field'>
+    <%= f.label :latitude -%>
+    <%= f.text_field :latitude  -%>
+
+  </div>
+
   <%= render '/refinery/admin/form_actions', :f => f,
              :continue_editing => false,
              :delete_title => t('delete', :scope => 'refinery.days.admin.days.day'),

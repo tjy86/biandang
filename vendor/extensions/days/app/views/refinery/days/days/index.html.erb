@@ -1,3 +1,4 @@
+
 <style type="text/css">
 #days{
 }
@@ -34,6 +35,9 @@
         <div class='clearfix'></div>
         <div class='location'><%= day.location %></div>
         <div class='clearfix'></div>
+        <script type="text/javascript">
+          add_marker(40.7666958, -73.9747837, "central park");
+        </script>
     <% end %>
   </div>
 
@@ -53,7 +57,6 @@ function initialize() {
     mapTypeId: google.maps.MapTypeId.ROADMAP
   }
   map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
-  add_marker(40.7666958, -73.9747837, "central park");
 }
 
 function loadScript() {
